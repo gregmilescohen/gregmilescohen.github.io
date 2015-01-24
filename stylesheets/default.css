@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/brooklyn-bridge-100.4.jpg");
+  background-color: #DFE2DB;
 }
 
 #mainlogo {
@@ -27,10 +27,10 @@ body {
 }
 
 #nav-links {
-  padding: 33px;
+  padding: 36px;
   position: absolute;
-  margin-left: 725px;
-  margin-right: -80px;
+  margin-left: 750px;
+  margin-right: -100px;
   font-color: #ffffff;
 }
 
@@ -38,6 +38,10 @@ a  {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.5em;
+  font-family: Raleway;
+
+  /*Link to font-family*/
+  src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
 
 }
 
