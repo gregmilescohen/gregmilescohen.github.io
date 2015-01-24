@@ -6,7 +6,7 @@ body {
   position:relative;
   margin: auto; /*centers div*/
   text-align: center; /* centers whatever is inside the div*/
-  margin-top: 200px;
+  margin-top: 120px;
 
 }
 
@@ -29,8 +29,7 @@ body {
 #nav-links {
   padding: 36px;
   position: absolute;
-  margin-left: 750px;
-  margin-right: -100px;
+  margin-left: 787px;
   font-color: #ffffff;
 }
 
@@ -51,3 +50,8 @@ a:hover {
 
 }
 
+#social {
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 68%;
+}
