@@ -55,3 +55,15 @@ a:hover {
   margin-top: 80px;
   margin-left: 68%;
 }
+
+#bloglinks {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  margin-top: 7em;
+  font-size: 1em;
+  font-family: Raleway;
+
+  /*Link to font-family*/
+  src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
+}
