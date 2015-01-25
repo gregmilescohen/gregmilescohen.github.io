@@ -31,16 +31,17 @@ body {
   position: absolute;
   margin-left: 787px;
   font-color: #ffffff;
+  border: 1px dotted black;
 }
 
-/*#nav-links:hover {
-  background-image: url()
-} */
+#linkedin:hover {
+  background-image: url(https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin-hover.png)
+}
 
 a  {
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: Raleway;
 
   /*Link to font-family*/
@@ -57,7 +58,7 @@ a:hover {
 #social {
   display: inline-block;
   margin-top: 80px;
-  margin-left: 68%;
+  margin-left: 80px;
 }
 
 #bloglinks {
