@@ -33,6 +33,10 @@ body {
   font-color: #ffffff;
 }
 
+#nav-links:hover {
+  background-image: url()
+}
+
 a  {
   text-decoration: none;
   color: #ffffff;
