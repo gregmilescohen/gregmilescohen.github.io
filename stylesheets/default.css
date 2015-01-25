@@ -31,12 +31,11 @@ body {
   position: absolute;
   margin-left: 787px;
   font-color: #ffffff;
-  border: 1px dotted black;
 }
 
-#linkedin:hover {
+/*#linkedin:hover {
   background-image: url(https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin-hover.png)
-}
+} */
 
 a  {
   text-decoration: none;
