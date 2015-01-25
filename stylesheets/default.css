@@ -71,3 +71,9 @@ a:hover {
   /*Link to font-family*/
   src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
 }
+
+#linkedin {
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 80px;
+}
