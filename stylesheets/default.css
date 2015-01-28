@@ -1,5 +1,64 @@
-body {
-  background-color: #DFE2DB;
+/*this should go at the top of every .css. */
+
+html, body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+font-family: Raleway;
+
+  /*Link to font-family*/
+  src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
+}
+
+/*For background image*/
+/*#bg and #bg img are for index.html (home page) only!*/
+/*adjusts div*/
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+
+  /*doubles size of div to maintain aspect ratio*/
+  width: 200%; 
+  height: 200%;
+}
+
+/*For background image*/
+/*adjusts the image inside the div*/
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+} 
+
+
+
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 3em;
+  margin-top: 10px;
+  opacity: 0.65;
+  background: #000000;
+}
+
+.nav-logo {
+  position: absolute;
+  margin:7px 0px 0px 80px; 
+}
+
+#nav-links {
+  margin-top: 21px;
+  position: absolute;
+  margin-left: 50%;
+  font-color: #ffffff;
 }
 
 #mainlogo {
@@ -8,29 +67,6 @@ body {
   text-align: center; /* centers whatever is inside the div*/
   margin-top: 50px;
 
-}
-
-.navbar {
-  position: absolute;
-  width: 100%;
-  height: 3em;
-  margin-top: 30px;
-  margin-left: -7.9px;
-  opacity: 0.65;
-  background: #000000;
-}
-
-.nav-logo {
-  position: absolute;
-  margin-left: 80px;
-  margin-top: 27px;
-}
-
-#nav-links {
-  padding: 41px;
-  position: absolute;
-  margin-left: 50%;
-  font-color: #ffffff;
 }
 
 /*#linkedin:hover {
@@ -42,16 +78,12 @@ a  {
   color: #ffffff;
   font-size: 1em;
   display: block;
-  font-family: Raleway;
-
-  /*Link to font-family*/
-  src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
+  
 
 }
 
 a:hover {
   color: #FFF056;
-  font-weight: bold;
 
 }
 
@@ -77,4 +109,14 @@ a:hover {
   position: absolute;
   margin-top: 80px;
   margin-left: 80px;
+}
+
+#footer {
+   position:absolute;
+   display:block;
+   margin-top: 20%;
+   height: 7em;
+   width:100%;
+   opacity: 0.65;
+   background: #000000;
 }
