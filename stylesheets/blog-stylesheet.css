@@ -133,10 +133,9 @@ a:hover {
 }
 
 #footer {
-   position:absolute;
+  position:absolute;
    display:block;
-   margin-top: 140px;
-   margin: auto;
+   margin-top: 20%;
    height: 9em;
    width:100%;
    opacity: 0.65;
