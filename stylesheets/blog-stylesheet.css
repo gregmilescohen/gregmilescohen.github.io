@@ -109,6 +109,7 @@ a:hover {
 }
 
 #social {
+  position: relative;
   display: inline-block;
   margin-top: 80px;
   margin-left: 80px;
