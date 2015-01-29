@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Blog</title>
+  <title>Arrays & Hashes</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
 </head>
@@ -46,22 +46,39 @@
             </table>
         </dev>
 
-    <h1><!-- Post Title --></h1>
-    <h2><!-- The subtitle, if you want it --></h2>
-    <h4><!-- Today's Date --></h4>
+    <h1>Arrays vs. Hashes</h1>
+    <h2>The Battle of the Century (but not really)</h2>
+    <h4>1.28.2015</h4>
 
   <section>
-    <p>
-
-    </p>
-    <p>
-
-    </p>
-    <p>
-
-    </p>
+    <p>The year is 1985, and Rocky Balboa is about to have the bout of his life against roided-up-Russian Ivan Drago. Drago is bigger, stronger, and the clear favorite to win. Rocky is the underdog. He's just a tough cat from Philly (woot! woot!) trying to shock the world. Rocky isn't as fancy. No frosted tips and no expensive gym equipment. That aint' Rock's style. No, The Italian Stallion hangs upside down in a Russian barn and does situps while holding a sack of potatoes. OK, I know you're this probably isn't the best analogy for arrays and hashes (I just LOVE Rocky IV), but I think I can draw some comparisons.</p>
 
 
+    <p>Arrays are sort of like Rocky. Arrays certainly aren't fancy, but they are extremely useful tools in Ruby. They simply allow us to store a list of single peices of data and attach it to a variable. Arrays can be made up of integers, floats, strings, and even other arrays! An array looks like this:</p>
+        <p></p>
+        <p><pre>Rocky = ["Philly", "tough", "south-paw"]</pre></p>
+        <p></p>
+        <p>If I want to call one of the objects in the array, I can do so by typing the name of the array followed by the location of the object in the array. So if I want to call "south-paw" I would type:</p>
+        <p></p>
+        <p><pre>Rocky[2]</pre></p>
+    <p>There is so much more we can do with arrays, but that's a story for another day.</p>
+
+    <p>Now Hashes are more like Drago. They're bigger, stronger, and not only can they store values, but they can assign each value to a designated "key"! The syntax for a literal hash looks something like this:</p>
+    <p></p>
+        <p><pre>
+            Drago = {
+                :key1 => value1,
+                :height => "6 ft. 8 inches",
+                :actor => "Dolph Lundgren",
+            }
+        </pre></p>
+        <p></p>
+
+    <p>Now say we wanted to call on the value "6 ft. 8 inches" from our "Drago" hash. We would just type the hash name, followed by the corresponding key in square brackets like so:</p>
+    <p><pre>
+            Drago[:height]
+        </pre></p>
+    <p>If I can code an array and a hash, WE CAN ALL CODE AN ARRAY AND A HASH! (Rocky IV reference. Seriously I'm done now.)</p>
   </section>
 </body>
 </html>
