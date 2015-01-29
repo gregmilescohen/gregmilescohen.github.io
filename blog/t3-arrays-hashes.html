@@ -1,15 +1,17 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
-<head>
-  <title>Arrays & Hashes</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-</head>
 
-<!-- prettify for ruby code in html; use <pre> wrapped around code example-->
-<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+    <head>
+    <title>My Website</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
 
-<body>
+        <!-- prettify for ruby code in html; use <pre> wrapped around code example-->
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst">
+        </script>
+
+    </head>
+        <body>
 
             <div class="navbar"></div>
 
@@ -20,41 +22,41 @@
             <table id="nav-links">
                 <tbody>
                     <tr>
-                        <td><a href="http://gregmilescohen.github.io">Home
+                        <td width="10%"><a href="http://gregmilescohen.github.io">Home
                         </a></td>
-                        <td><a href="#">About</a></td>
-                        <td><a href="#">Work</a></td>
-                        <td><a href="#">Contact</a></td>
-                        <td><a href="http://gregmilescohen.github.io/blog">Blog</a></td>
+                        <td width="10%"><a href="#">About</a></td>
+                        <td width="10%"><a href="#">Work</a></td>
+                        <td width="10%"><a href="#">Contact</a></td>
+                        <td width="10%"><a href="http://gregmilescohen.github.io/blog">Blog</a></td>
                     </tr>
                 </tbody>
             </table>
 
 
             <!-- table for social media links-->
-        <dev id="social">
+        <div id="social">
             <table>
                 <tbody>
                     <tr>
-                        <td><a href="https://www.linkedin.com/pub/greg-cohen/52/204/559"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin-button.png"/></a></td>
-                        <td><a href="https://twitter.com/gregmilescohen"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/twitter-button.png"/></a></td>
-                        <td><a href="https://www.facebook.com/greg.cohen.52"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/facebook-button.png"/></a></td>
-                        <td><a href="http://instagram.com/gregmilescohen/"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/instagram-button.png"/></a></td>
-                        <td><a href="https://soundcloud.com/gregmilesmusic"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/soundcloud-button.png"/></a></td>
+                        <td><a href="https://www.linkedin.com/pub/greg-cohen/52/204/559"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin.png"/></a></td>
+                        <td><a href="https://twitter.com/gregmilescohen"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/twitter.png"/></a></td>
+                        <td><a href="https://www.facebook.com/greg.cohen.52"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/facebook.png"/></a></td>
+                        <td><a href="http://instagram.com/gregmilescohen/"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/instagram.png"/></a></td>
+                        <td><a href="https://github.com/gregmilescohen"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/github.png"/></a></td>
                     </tr>
                 </tbody>
             </table>
-        </dev>
+        </div>
 
     <h1>Arrays vs. Hashes</h1>
     <h2>The Battle of the Century (but not really)</h2>
     <h4>1.28.2015</h4>
 
   <section>
-    <p>The year is 1985, and Rocky Balboa is about to have the bout of his life against roided-up-Russian Ivan Drago. Drago is bigger, stronger, and the clear favorite to win. Rocky is the underdog. He's just a tough cat from Philly (woot! woot!) trying to shock the world. Rocky isn't as fancy. No frosted tips and no expensive gym equipment. That aint' Rock's style. No, The Italian Stallion hangs upside down in a Russian barn and does situps while holding a sack of potatoes. OK, I know you're this probably isn't the best analogy for arrays and hashes (I just LOVE Rocky IV), but I think I can draw some comparisons.</p>
+    <p>The year is 1985, and Rocky Balboa is about to have the bout of his life against roided-up-Russian Ivan Drago. Drago is bigger, stronger, and the clear favorite to win. Rocky is the underdog. He's just a tough cat from Philly (woot! woot!) trying to shock the world. Rocky isn't as fancy. No frosted tips and no expensive gym equipment. That aint' Rock's style. No, The Italian Stallion hangs upside down in a Russian barn and does sit-ups while holding a sack of potatoes. OK, I know you're this probably isn't the best analogy for arrays and hashes (I just LOVE Rocky IV), but I think I can draw some comparisons.</p>
 
 
-    <p>Arrays are sort of like Rocky. Arrays certainly aren't fancy, but they are extremely useful tools in Ruby. They simply allow us to store a list of single peices of data and attach it to a variable. Arrays can be made up of integers, floats, strings, and even other arrays! An array looks like this:</p>
+    <p>Arrays are sort of like Rocky. Arrays certainly aren't fancy, but they are extremely useful tools in Ruby. They simply allow us to store a list of single pieces of data and attach it to a variable. Arrays can be made up of integers, floats, strings, and even other arrays! An array looks like this:</p>
         <p></p>
         <p><pre>Rocky = ["Philly", "tough", "south-paw"]</pre></p>
         <p></p>
