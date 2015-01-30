@@ -67,6 +67,9 @@ pre {
   color: navy;
 }
 
+section a {
+  white-space: nowrap;
+}
 .navbar {
   position: absolute;
   width: 100%;
