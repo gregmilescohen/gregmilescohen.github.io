@@ -106,14 +106,7 @@ section a {
   background-image: url(https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin-hover.png)
 } */
 
-#nav-links a  {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1em;
-  display: block;
-}
-
-#blog-links a  {
+a  {
   text-decoration: none;
   color: #ffffff;
   font-size: 1em;
