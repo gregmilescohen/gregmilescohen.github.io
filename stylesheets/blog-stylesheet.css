@@ -67,9 +67,12 @@ pre {
   color: navy;
 }
 
+/*for links within blog*/
 section a {
   white-space: nowrap;
+  text-decoration: none;
 }
+
 .navbar {
   position: absolute;
   width: 100%;
@@ -103,13 +106,18 @@ section a {
   background-image: url(https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin-hover.png)
 } */
 
-a  {
+#nav-links a  {
   text-decoration: none;
   color: #ffffff;
   font-size: 1em;
   display: block;
+}
 
-
+#blog-links a  {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1em;
+  display: block;
 }
 
 a:hover {
