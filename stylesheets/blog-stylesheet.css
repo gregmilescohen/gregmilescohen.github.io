@@ -106,12 +106,7 @@ section a {
   background-image: url(https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin-hover.png)
 } */
 
-a  {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1em;
-  display: block;
-}
+
 
 a:hover {
   color: #FFF056;
@@ -152,3 +147,10 @@ a:hover {
    opacity: 0.65;
    background: #000000;
 }*/
+
+a  {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1em;
+
+}
