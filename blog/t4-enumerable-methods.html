@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
 
+        <!-- prettify for ruby code in html; use <pre> wrapped around code example-->
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst">
+        </script>
 
     </head>
         <body>
@@ -45,20 +48,63 @@
             </table>
         </div>
 
-    <h1>DBC & Grilled Cheese</h1>
-    <h2>Reaction to Shereef's Fireside Chat</h2>
-    <h4>1.15.2015</h4>
+    <h1>Enumerable Methods: #cycle</h1>
+    <h4>2.5.2015</h4>
 
   <section>
-    <p>After watching Shereef's Fireside Chat, I think the best way to describe Dev Bootcamp is with a grilled cheese sandwich (duh right?). Grilled cheese sandwiches taste delicious and can be made by anybody. It may be hot and difficult to bite into at first, but just give it some time and everything is going to be ok. But most importantly, we can make the grilled cheese taste as good or as bad as we want depending on what we put into it. If I slap kraft singles on some wonderbread it put it on a hot plate, it probably won't taste too good. But if I get some aged cheddar and some gouda, maybe some nice bacon on there, and put it between some sourdough bread, Mmmmmmm. The same goes for Dev Bootcamp, and for every educational institution for that matter. You get out what you put in, and I plan to put a whole lot of gouda and bacon into my DBC learning experience.
+    <p>I want to talk about a new enumerable method I'm learning about called #cycle. When this method is called on an array, the array will repeat forever. However, there is a way to stop it from repeating to infinity and crashing your program. One way is to include a `break` statement. Let's say you have an array of Game Of Thrones characters. You want to cycle through that array until you get to Joffrey Baratheon, because, well, (SPOILER!) he's dead. That would look something like this:</p>
+        <br>
+        <p><pre>
+        got_characters = ["Deanerys Targaryen", "John Snow", "Tyrion<br> Lannister", "Arya Stark", "Joffrey Baratheon", "Petyr Baelish",<br> "Margaery Tyrell"]
+        <br><br>
+        got_characters.cycle { |name| puts name }<br>
+        break if name == "Joffrey Baratheon"<br>
+        end<br>
+        <br><br>
+        => Deanerys Targaryen<br>
+        John Snow<br>
+        Tyrion Lannister<br>
+        Arya Stark<br>
+        nil<br>
+        </pre></p>
 
-    </p>
-    <p>Nothing has changed for me as far as my expectations for DBC. I did my research before applying, so I knew how challenging this would be. I also know from past experiences that I have the ability to thrive when thrown out of my comfort zone. What I do expect from DBC is a give and take relationship. As long as I am giving everything I have, I expect to be put in the best possible learning sitiuations for me to become the best developer I can be.
+        <p></p>
 
-    </p>
-    <p>I am extremely excited to begin on-site but I won't lie, the things I have heard and read about students being asked to leave does make me a bit nervous. I am going to do everything in my power to prevent that from happening. As of yesterday I told my boss at my current job that I would be quitting just before the start of Phase 1. I am officially all in for DBC.
+        <p>Another way to keep the array from repeating forever with #cycle, is to include a positive integer as a parameter of #cycle. This will tell my block of code to repeat x number of times. Check it out below.</p>
+        <br><br>
 
-    </p>
+        <p><pre>
+
+        got_characters = ["Deanerys Targaryen", "John Snow", "Tyrion<br> Lannister", "Arya Stark", "Joffrey Baratheon", "Petyr Baelish",<br>"Margaery Tyrell"]
+        <br><br>
+        got_characters.cycle(3) { |name| puts name }
+        <br><br>
+
+=> Deanerys Targaryen<br>
+John Snow<br>
+Tyrion Lannister<br>
+Arya Stark<br>
+Joffrey Baratheon<br>
+Petyr Baelish<br>
+Margaery Tyrell<br>
+Deanerys Targaryen<br>
+John Snow<br>
+Tyrion Lannister<br>
+Arya Stark<br>
+Joffrey Baratheon<br>
+Petyr Baelish<br>
+Margaery Tyrell<br>
+Deanerys Targaryen<br>
+John Snow<br>
+Tyrion Lannister<br>
+Arya Stark<br>
+Joffrey Baratheon<br>
+Petyr Baelish<br>
+Margaery Tyrell
+
+        </pre></p>
+
+    <p>I'm still learning everything that this method can do and possible applications, but I hope this brief explanation is helpful!</p>
 
     <br>
     <br>
