@@ -22,8 +22,7 @@ body {
 
 .nav-logo {
   position: absolute;
-  margin-left: 80px;
-  margin-top: 27px;
+  margin:8px 0px 0px 80px;
 }
 
 #nav-links {
