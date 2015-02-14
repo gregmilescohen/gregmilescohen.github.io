@@ -1,12 +1,22 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 
     <head>
-    <title>Blog</title>
+    <title>My Website</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
 
+        <!-- prettify for ruby code in html; use <pre> wrapped around code example-->
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst">
+        </script>
 
+        <!-- for tabbing over in code examples -->
+        <style type="text/css">
+            <!--
+            .tab { margin-left: 40px; }
+            -->
+
+        </style>
     </head>
         <body>
 
@@ -45,23 +55,52 @@
             </table>
         </div>
 
-    <div id="bloglinks">
-        <p><a href="http://gregmilescohen.github.io/blog/t1-git-blog.html">1.15.2015 - Dev Bootcamp Phase 0: Taking the plunge: thoughts and learnings after week 1</a></p>
-        <p><a href="http://gregmilescohen.github.io/blog/c1-chefs-kitchen.html">1.15.2015 - DBC & Grilled Cheese</a></p>
-        <p><a href="http://gregmilescohen.github.io/blog/t2-css-design.html">1.24.2015 - CSS: Classes & IDs</a></p>
-        <p><a href="http://gregmilescohen.github.io/blog/gps1-2.html">GPS 1.2</a></p>
-        <p><a href="http://gregmilescohen.github.io/blog/t3-arrays-hashes.html">1.28.2015 - Ruby: Arrays & Hashes</a></p>
-        <p><a href="http://gregmilescohen.github.io/blog/c3_thinking-style.html">1.29.2015 - Thoughts About Thinking Styles</a></p>
-        <p><a href="http://gregmilescohen.github.io/blog/t4-enumerable-methods.html">2.5.2015 - Enumerable Methods: #cycle</a></p>
-        <p><a href="http://gregmilescohen.github.io/blog/c4-tech-issues.html">2.5.2015 - Net Neutrality</a></p>
-        <p><a href="http://gregmilescohen.github.io/blog/c5-feedback.html">2.13.2015 - Feedback</a></p>
-        <p><a href="http://gregmilescohen.github.io/blog/t5-ruby-classes.html">2.13.2015 - Ruby Classes</a></p>
+    <h1>Ruby Classes</h1>
+    <h4>2.13.2015</h4>
 
+  <section>
+    <p>Classes in ruby are essential for organization. And when it comes to the readability of code, organization is EVERYTHING. With large code, classes really help to break everything down into parts. Classes are created using: <pre>class NewClass</pre></p>
+    <p>Notice how I do not use underscores for the class name. Words are differentiated using capital letters instead. I would then define my methods within the class. Then if I were to call on the class at any point in my code, all of the methods within that class would run.</p>
 
-    </div>
+    <pre>
+    class SalePrice
 
-    <div id="footer"></div>
+      def initialize(msrp, percent_as_decimal, current_month)
+        @msrp = msrp
+        @percent_as_decimal = percent_as_decimal
+        @current_month = current_month
+      end
 
-  </body>
+      def cost_after_sale
+        @amount_off = @msrp * @percent_as_decimal
+        @sale_price = @msrp - @amount_off
 
+        p @sale_price
+      end
+
+      def is_sale_active
+        if @current_month == "February"
+          p true
+        elsif @current_month != "February"
+          p false
+        end
+      end
+
+    end
+
+    s = SalePrice.new(45.00, 0.20, "February")
+    s.cost_after_sale
+    s.is_sale_active
+
+    =>36.0
+    =>true
+
+        </pre>
+
+    <p>By passing the three necessary arguments, I am able find out what the sale price is and if the sale is currently ongoing. So now I can use this class anwhere in my code to produce this result rather than having to type the same code over and over again. Cool, right?</p>
+    <p>
+    <br>
+    <br>
+  </section>
+</body>
 </html>
