@@ -1,0 +1,131 @@
+    <!DOCTYPE html>
+<html>
+
+    <head>
+    <title>My Website</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
+
+        <!-- prettify for ruby code in html; use <pre> wrapped around code example-->
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst">
+        </script>
+
+        <!-- for tabbing over in code examples -->
+        <style type="text/css">
+            <!--
+            .tab { margin-left: 40px; }
+            -->
+
+        </style>
+    </head>
+        <body>
+
+            <div class="navbar"></div>
+
+            <!-- nav logo -->
+            <div class="nav-logo"><a href="http://gregmilescohen.github.io"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/gmc-navlogo-4.png"/></a></div>
+
+            <!-- table for nav bar -->
+            <table id="nav-links">
+                <tbody>
+                    <tr>
+                        <td width="10%"><a href="http://gregmilescohen.github.io">Home
+                        </a></td>
+                        <td width="10%"><a href="#">About</a></td>
+                        <td width="10%"><a href="#">Work</a></td>
+                        <td width="10%"><a href="#">Contact</a></td>
+                        <td width="10%"><a href="http://gregmilescohen.github.io/blog">Blog</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <!-- table for social media links-->
+        <div id="social">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.linkedin.com/pub/greg-cohen/52/204/559"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin.png"/></a></td>
+                        <td><a href="https://twitter.com/gregmilescohen"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/twitter.png"/></a></td>
+                        <td><a href="https://www.facebook.com/greg.cohen.52"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/facebook.png"/></a></td>
+                        <td><a href="http://instagram.com/gregmilescohen/"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/instagram.png"/></a></td>
+                        <td><a href="https://github.com/gregmilescohen"><img src="https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/github.png"/></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    <h1>Ruby: Inheritance and Composition</h1>
+    <h4>2.21.2015</h4>
+
+  <section>
+    <p>Inheritance and composition are two different strategies that can be used to write Classes and use shared methods between them. Inheritance literally “inherits” or applies all of the methods from the parent class (the class from which the methods are being given) onto the child class (the class that is inheriting the methods). An example of implicit inheritance looks something like this:</p>
+
+    <pre>
+        class Strings
+          def initialize(instrument)
+            @instrument = instrument
+          end
+
+          def statement
+            puts “I am a #{@instrument} an string instrument”
+          end
+        end
+
+
+        class Brass < Strings
+        end
+
+    </pre>
+
+    <p>`class Brass` now contains all of the methods from `class Strings`. If we want to change anything in our Brass class to make it different from our Strings class (which we do because they are different types of instruments), we can just add the changes to our class using the same method name. This is called explicit inheritance.</p>
+
+    <pre>
+        class Strings
+          def initialize(instrument)
+            @instrument = instrument
+          end
+
+          def statement
+            puts “I am a #{@instrument} and I am part of the strings family”
+          end
+        end
+
+
+        class Brass < Strings
+          def statement
+            puts “I am a #{@instrument} and I am part of the brass family”
+          end
+        end
+    </pre>
+
+    <p>In DBC, Composition is what we've been doing up to this point. Composition is more flexible than inheritance and can change. As opposed to inheritance, we use class and instance variables to call methods in other methods and classes. It essentially allows us to use methods of one class to define new methods and create new features in another class. Composition also allows our code to be much more secure, because we can control the scope of each method in every class. This is ideal and much less dangerous than using inheritance.</p>
+
+    <pre>
+        class Strings
+          def initialize(string_instr)
+            @string_instr = string_instr
+          end
+
+          def statement
+            puts “I am a #{@string_instr} and I am part of the strings family”
+          end
+        end
+
+        class Brass
+          def initialize(brass_instr)
+            @brass_instr = brass_instr
+          end
+
+          def statement
+            puts “I am a #{@brass_instr} and I am part of the brass family”
+          end
+        end
+    </pre>
+
+    <p>It is generally a better idea to use composition rather than inheritance. Composition allows for more customization and flexibility of methods and classes, and more secure code because we can adjust the scope of each variable so that it can only be used in certain places. Hope some of this was helpful!</p>
+    <br>
+    <br>
+  </section>
+</body>
+</html>
