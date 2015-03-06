@@ -116,6 +116,9 @@ a:hover {
   margin-left: 80px;
 }
 
+
+/* ABOUT SECTION */
+
 .about {
    position:absolute;
    margin-top: 50px;
@@ -123,7 +126,26 @@ a:hover {
    height: 600px;
    width:100%;
    opacity: 0.9;
-   background: white;
+   background: rgba(255, 255, 255, 0.85);
+   background:rgb(255, 255, 255); /*fallback*/
+}
+
+.about-header {
+  position:absolute;
+  color: #FFF056;
+  font-size: 60px;
+  font-weight: bold;
+  margin-left:68%;
+  margin-top: 30px;
+}
+
+.about-content {
+  position:absolute;
+  color: black;
+  font-size: 20px;
+  margin-left:40%;
+  padding: 40px;
+  margin-top: 150px;
 }
 
 
