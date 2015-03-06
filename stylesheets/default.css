@@ -138,36 +138,43 @@ a:hover {
    background: black;
 }
 
+.footer-social {
+  position: absolute;
+  margin-top: 63px;
+  margin-left: 10%;
+}
+
 .phone {
   position: absolute;
-  margin-left: 30%;
+  margin-left: 40%;
   margin-top: 40px;
 
 }
 
 .phone-icon {
   position: absolute;
+  margin-top: 15px;
 }
 
 .phone-number {
   position: absolute;
   color: #ffffff;
-  margin-left: 80px;
-  font-size: 20px;
-  margin-top: 5px;
+  margin-left: 70px;
+  font-size: 15px;
+  margin-top: 15px;
 }
 
 .mail {
   position: absolute;
   height: 100px;
   width: 100px;
-  margin-left: 60%;
+  margin-left: 70%;
 
 }
 
 .mail-icon {
   position: absolute;
-  margin-top: 40px;
+  margin-top: 55px;
   margin-right: 40px;
 
 }
@@ -175,8 +182,8 @@ a:hover {
 .email{
   position: relative;
   color: white;
-  font-size: 20px;
-  margin-left: 90px;
-  margin-top: 62px;
+  font-size: 15px;
+  margin-left: 80px;
+  margin-top: 66px;
 
 }
