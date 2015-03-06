@@ -1,148 +1,48 @@
-/*this should go at the top of every .css. */
-
-html, body {
-margin: 0;
-padding: 0;
-width: 100%;
-height: 100%;
-font-family: Raleway;
-
-  /*Link to font-family*/
-  src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
+body {
+  background-image: url("https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/brooklyn-bridge-100.4.jpg");
 }
 
-/*For background image*/
-/*#bg and #bg img are for index.html (home page) only!*/
-/*adjusts div*/
-#bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
+#mainlogo {
+  position:relative;
+  margin: auto; /*centers div*/
+  text-align: center; /* centers whatever is inside the div*/
+  margin-top: 200px;
 
-  /*doubles size of div to maintain aspect ratio*/
-  width: 200%;
-  height: 200%;
-}
-
-/*For background image*/
-/*adjusts the image inside the div*/
-#bg img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
 }
 
 .navbar {
-  position:
+  position: absolute;
   width: 100%;
-  height: 160px;
-  margin: 0;
-  padding: 0;
-  opacity: 0.85;
-  background: black;
+  height: 3em;
+  margin-top: 30px;
+  margin-left: -7.9px;
+  opacity: 0.65;
+  background: #000000;
 }
 
 .nav-logo {
   position: absolute;
-  margin-left: 1%;
-  margin-top: 1px
+  margin:8px 0px 0px 80px;
 }
 
-.nav-links {
-  font-weight: bold;
-  font-size: 150%;
-  text-align: right;
-  margin-top: 6px;
+#nav-links {
+  padding: 33px;
   position: absolute;
-  margin-left: 90%;
+  margin-left: 725px;
+  margin-right: -80px;
   font-color: #ffffff;
 }
-
-#social {
-  position: relative;
-  display: inline-block;
-  margin-top: 5px;
-  margin-left: 160px;
-}
-
-#mainlogo {
-  position: relative;
-  margin: auto; /*centers div*/
-  text-align: center; /* centers whatever is inside the div*/
-  margin-top: 50px;
-
-}
-
-/*#linkedin:hover {
-  background-image: url(https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin-hover.png)
-} */
 
 a  {
   text-decoration: none;
   color: #ffffff;
-  font-size: 1em;
-  display: block;
-
+  font-size: 1.5em;
 
 }
 
 a:hover {
   color: #FFF056;
-
-}
-
-
-
-#bloglinks {
-  position: relative;
-  margin: auto;
-  text-align: center;
-  margin-top: 7em;
-  font-size: 1em;
-  font-family: Raleway;
-
-  /*Link to font-family*/
-  src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
-}
-
-#linkedin {
-  position: absolute;
-  margin-top: 80px;
-  margin-left: 80px;
-}
-
-.about {
-   position:absolute;
-   margin-top: 50px;
-   margin-bottom: 150px;
-   height: 600px;
-   width:100%;
-   opacity: 0.9;
-   background: white;
-}
-
-
-/*FOOTER - FOR ALL PAGES*/
-.footer {
-   position: absolute;
-   margin-top:650px;
-   margin-bottom: 0;
-   height: 150px;
-   width:100%;
-   opacity: 0.85;
-   background: black;
-}
-
-#phone-icon {
-  margin-top: 40px;
-}
-
-#mail-icon {
+  font-weight: bold;
 
 }
 
