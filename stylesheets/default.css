@@ -57,16 +57,16 @@ font-family: Raleway;
   font-weight: bold;
   font-size: 150%;
   text-align: right;
-  margin-top: 6px;
+  margin-top: 7px;
   position: absolute;
-  margin-left: 90%;
+  margin-left: 89.5%;
   font-color: #ffffff;
 }
 
 #social {
   position: relative;
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 160px;
 }
 
