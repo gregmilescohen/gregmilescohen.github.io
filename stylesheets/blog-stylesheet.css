@@ -154,3 +154,181 @@ a  {
   font-size: 1em;
 
 }
+
+
+
+
+
+
+=============================================================
+
+
+
+
+
+
+
+
+
+
+  /*this should go at the top of every .css. */
+
+html, body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+background-color: white;
+font-family: Raleway;
+
+  /*Link to font-family*/
+  src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
+}
+
+
+h1 {
+  text-align: left;
+  color: #000000;
+  font-size: 4em;
+  font-family: Raleway;
+  font-weight: bold;
+  margin-left: 30%;
+  margin-right: 30%;
+
+  /*Link to font-family*/
+  src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
+}
+
+h2 {
+  text-align: left;
+  font-family: Raleway;
+  font-style: italic;
+  color: black;
+  margin-left: 30%;
+
+
+  /*Link to font-family*/
+  src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
+}
+
+h4 {
+  text-align: left;
+  margin-bottom: 25px;
+  margin-left: 30%;
+  font-family: Raleway;
+  color: black;
+  font-size: 1em;
+
+  /*Link to font-family*/
+  src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
+}
+
+p {
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: Raleway;
+  font-size: 1em;
+  color: black;
+
+  /*Link to font-family*/
+  src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
+
+}
+
+pre {
+  margin-left: 30%;
+  margin-right: 30%;
+  color: navy;
+}
+
+for links within blog
+section a {
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.navbar {
+  position:
+  width: 100%;
+  height: 160px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.85;
+  background: black;
+}
+
+.nav-logo {
+  position: absolute;
+  margin-left: 1%;
+  margin-top: 1px
+}
+
+.nav-links {
+  font-weight: bold;
+  font-size: 150%;
+  text-align: right;
+  margin-top: 7px;
+  position: absolute;
+  margin-left: 89.5%;
+  font-color: #ffffff;
+}
+
+#social {
+  position: absolute;
+  margin-left: 160px;
+}
+
+/*#linkedin:hover {
+  background-image: url(https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin-hover.png)
+} */
+
+
+
+
+
+.bloglinks {
+  position: absolute;;
+  margin-left: -50px;
+  text-align: left;
+  margin-top: 100px;
+  font-size: 12px;
+  font-family: Raleway;
+
+  /*Link to font-family*/
+  src: url(http://fonts.googleapis.com/css?family=Raleway:400,600,900,300);
+}
+
+
+/*#footer {
+  position:absolute;
+   display:block;
+   margin-top: 20%;
+   height: 9em;
+   width:100%;
+   opacity: 0.65;
+   background: #000000;
+}*/
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.navbar a:hover {
+  color: #FFF056;
+}
+
+.bloglinks a  {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+
+}
+
+.bloglinks a:hover {
+
+  color: #FFF056;
+
+}
+*/

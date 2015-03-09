@@ -57,9 +57,9 @@ font-family: Raleway;
   font-weight: bold;
   font-size: 150%;
   text-align: right;
-  margin-top: 7px;
-  position: absolute;
-  margin-left: 89.5%;
+  margin-top: 9px;
+  margin-right: 18px;
+  float: right;
   font-color: #ffffff;
 }
 
@@ -122,8 +122,7 @@ a:hover {
 .about {
    position:absolute;
    margin-top: 50px;
-   margin-bottom: 150px;
-   height: 600px;
+   margin-bottom: 150px:
    width:100%;
    opacity: 0.9;
    background: rgba(255, 255, 255, 0.85);
@@ -140,72 +139,96 @@ a:hover {
 }
 
 .about-content {
-  position:absolute;
   color: black;
   font-size: 20px;
-  margin-left:40%;
-  padding: 40px;
-  margin-top: 150px;
+  margin-left:;
+  padding: 30px;
+  margin-top: 100px;
 }
 
 
 /*FOOTER - FOR ALL PAGES*/
 .footer {
    position: absolute;
-   margin-top:650px;
+   margin-top:750px;
    margin-bottom: 0;
-   height: 150px;
    width:100%;
    opacity: 0.85;
    background: black;
 }
 
 .footer-social {
-  position: absolute;
+  display: block;
   margin-top: 63px;
   margin-left: 10%;
 }
 
 .phone {
-  position: absolute;
-  margin-left: 40%;
-  margin-top: 40px;
+  display: block;
+  margin-left: 46%;
+  margin-top: 50px;
 
 }
 
 .phone-icon {
   position: absolute;
-  margin-top: 15px;
+  margin-top: -100px;
+  margin-left: 4%;
 }
 
 .phone-number {
   position: absolute;
   color: #ffffff;
-  margin-left: 70px;
-  font-size: 15px;
-  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 12px;
+  margin-top: -50px;
+  padding: 10px;
 }
 
 .mail {
-  position: absolute;
+  display: block;
   height: 100px;
   width: 100px;
-  margin-left: 70%;
+  margin-left: 78%;
+  margin-top: 17px;
 
 }
 
 .mail-icon {
   position: absolute;
-  margin-top: 55px;
+  margin-top: -50px;
   margin-right: 40px;
 
 }
 
 .email{
-  position: relative;
   color: white;
-  font-size: 15px;
-  margin-left: 80px;
-  margin-top: 66px;
+  font-size: 12px;
+  margin-left: -60px;
+  margin-top: -40px;
+
+}
+
+.col {
+  width: 33.3%;
+}
+
+
+@media and (max-width:560px) and (min-width:400px){
+
+.footer-social {
+  display: block;
+  align:center;
+}
+
+.phone {
+  display: block;
+  align:center;
+}
+
+.mail {
+  display: block;
+  align:center;
+}
 
 }
