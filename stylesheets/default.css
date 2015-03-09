@@ -120,9 +120,7 @@ a:hover {
 /* ABOUT SECTION */
 
 .about {
-   position:absolute;
-   margin-top: 50px;
-   margin-bottom: 150px:
+   position:relative;
    width:100%;
    opacity: 0.9;
    background: rgba(255, 255, 255, 0.85);
@@ -141,71 +139,74 @@ a:hover {
 .about-content {
   color: black;
   font-size: 20px;
-  margin-left:;
-  padding: 30px;
-  margin-top: 100px;
+  padding: 80px;
 }
+
+.about-img {
+  position:relative;
+  display:block;
+  float: left;
+  vertical-align: middle;
+  margin-right: 25px;
+  padding: 20px;
+}
+
 
 
 /*FOOTER - FOR ALL PAGES*/
 .footer {
-   position: absolute;
-   margin-top:750px;
-   margin-bottom: 0;
+   position: relative;
    width:100%;
    opacity: 0.85;
    background: black;
 }
 
-.footer-social {
-  display: block;
-  margin-top: 63px;
-  margin-left: 10%;
+
+.footer tr{
+  position:relative;
+  margin-bottom: 20px;
+
 }
 
 .phone {
-  display: block;
+  position:relative;
   margin-left: 46%;
-  margin-top: 50px;
+  margin-top: 170px;
 
 }
 
 .phone-icon {
   position: absolute;
-  margin-top: -100px;
   margin-left: 4%;
 }
 
 .phone-number {
   position: absolute;
   color: #ffffff;
-  margin-left: 20px;
+  margin-left: -6px;
   font-size: 12px;
-  margin-top: -50px;
   padding: 10px;
 }
 
 .mail {
-  display: block;
+  position:relative;
   height: 100px;
   width: 100px;
   margin-left: 78%;
-  margin-top: 17px;
 
 }
 
 .mail-icon {
   position: absolute;
-  margin-top: -50px;
   margin-right: 40px;
 
 }
 
 .email{
+  position:absolute;
   color: white;
   font-size: 12px;
   margin-left: -60px;
-  margin-top: -40px;
 
 }
 
@@ -214,7 +215,7 @@ a:hover {
 }
 
 
-@media and (max-width:560px) and (min-width:400px){
+/* @media and (max-width:560px) and (min-width:400px){
 
 .footer-social {
   display: block;
@@ -231,4 +232,4 @@ a:hover {
   align:center;
 }
 
-}
+} */
