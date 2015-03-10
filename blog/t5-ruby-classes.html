@@ -64,43 +64,46 @@
     <h4>2.13.2015</h4>
 
   <section>
-    <p>Classes in ruby are essential for organization. And when it comes to the readability of code, organization is EVERYTHING. With large code, classes really help to break everything down into parts. Classes are created using: <pre>class NewClass</pre></p>
+    <p>Classes in ruby are essential for organization. And when it comes to the readability of code, organization is EVERYTHING. With large code, classes really help to break everything down into parts. Classes are created using:</p>
+    <pre>
+        class NewClass
+    </pre>
     <p>Notice how I do not use underscores for the class name. Words are differentiated using capital letters instead. I would then define my methods within the class. Then if I were to call on the class at any point in my code, all of the methods within that class would run.</p>
 
     <pre>
-    class SalePrice
+        class SalePrice
 
-      def initialize(msrp, percent_as_decimal, current_month)
-        @msrp = msrp
-        @percent_as_decimal = percent_as_decimal
-        @current_month = current_month
-      end
+          def initialize(msrp, percent_as_decimal, current_month)
+            @msrp = msrp
+            @percent_as_decimal = percent_as_decimal
+            @current_month = current_month
+          end
 
-      def cost_after_sale
-        @amount_off = @msrp * @percent_as_decimal
-        @sale_price = @msrp - @amount_off
+          def cost_after_sale
+            @amount_off = @msrp * @percent_as_decimal
+            @sale_price = @msrp - @amount_off
 
-        p @sale_price
-      end
+            p @sale_price
+          end
 
-      def is_sale_active
-        if @current_month == "February"
-          p true
-        elsif @current_month != "February"
-          p false
+          def is_sale_active
+            if @current_month == "February"
+              p true
+            elsif @current_month != "February"
+              p false
+            end
+          end
+
         end
-      end
 
-    end
+        s = SalePrice.new(45.00, 0.20, "February")
+        s.cost_after_sale
+        s.is_sale_active
 
-    s = SalePrice.new(45.00, 0.20, "February")
-    s.cost_after_sale
-    s.is_sale_active
+        =>36.0
+        =>true
 
-    =>36.0
-    =>true
-
-        </pre>
+    </pre>
 
     <p>By passing the three necessary arguments, I am able find out what the sale price is and if the sale is currently ongoing. So now I can use this class anwhere in my code to produce this result rather than having to type the same code over and over again. Cool, right?</p>
     <p>

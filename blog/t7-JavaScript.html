@@ -72,16 +72,16 @@
 <p>The difference lies in the Ruby Boolean operators `==` and `!=`, and the JavaScript Boolean operators ==, !=, ===, and !==. JavaScript has these extra two operators to mean “precisely equal” (===) and “not precisely equal” (!==). These operators are included in part because of Automatic Type Conversion, also known as Type Coercion, which is a feature built into JavaScript. Let’s say you had the following statement in JavaScript: </p>
 
     <pre>
-“5” == 5
-//->true
+                “5” == 5
+                //->true
 </pre>
 
 
 <p>Wait what? Why is the return value true?! Now in Ruby, that would obviously return false because the string “5” is not equal to the integer 5. But in JavaScript, because of Type Coercion, the string “5” will be automatically turned into the integer 5 to make JS happy, thus returning true. But we do not want this. When we typed “5” we meant the string “5”, so the return value should be false. So to fix this, we need our new handy Boolean operators `===` and `!==` to tell JavaScript “NO! I do not want you to mess with by code. BACK OFF.” So now if we write</p>
 
 <pre>
-“5” === 5
-//->false
+                “5” === 5
+                //->false
 </pre>
 
 <p>our return value is false because “5” does not “precisely equal” 5. So when in doubt, use === (precisely equal) and !== (not precisely equal) rather than == and != to compare statements in JavaScript. </p>

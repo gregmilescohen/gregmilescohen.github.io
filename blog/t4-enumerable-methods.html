@@ -66,55 +66,56 @@
   <section>
     <p>I want to talk about a new enumerable method I'm learning about called #cycle. When this method is called on an array, the array will repeat forever. However, there is a way to stop it from repeating to infinity and crashing your program. One way is to include a `break` statement. Let's say you have an array of Game Of Thrones characters. You want to cycle through that array until you get to Joffrey Baratheon, because, well, (SPOILER!) he's dead. That would look something like this:</p>
         <br>
-        <p><pre>
-        got_characters = ["Deanerys Targaryen", "John Snow", "Tyrion<br> Lannister", "Arya Stark", "Joffrey Baratheon", "Petyr Baelish",<br> "Margaery Tyrell"]
-        <br><br>
-        got_characters.cycle { |name| puts name }<br>
-        break if name == "Joffrey Baratheon"<br>
-        end<br>
-        <br><br>
-        => Deanerys Targaryen<br>
-        John Snow<br>
-        Tyrion Lannister<br>
-        Arya Stark<br>
-        nil<br>
-        </pre></p>
+        <pre>
+        got_characters = ["Deanerys Targaryen", "John Snow", "Tyrion Lannister",
+        "Arya Stark", "Joffrey Baratheon", "Petyr Baelish", "Margaery Tyrell"]
 
-        <p></p>
+        got_characters.cycle { |name| puts name }
+        break if name == "Joffrey Baratheon"
+        end
+
+        => Deanerys Targaryen
+        John Snow
+        Tyrion Lannister
+        Arya Stark
+        nil
+
+        </pre>
+
 
         <p>Another way to keep the array from repeating forever with #cycle, is to include a positive integer as a parameter of #cycle. This will tell my block of code to repeat x number of times. Check it out below.</p>
-        <br><br>
 
-        <p><pre>
+        <pre>
 
-        got_characters = ["Deanerys Targaryen", "John Snow", "Tyrion<br> Lannister", "Arya Stark", "Joffrey Baratheon", "Petyr Baelish",<br>"Margaery Tyrell"]
-        <br><br>
+        got_characters = ["Deanerys Targaryen", "John Snow",
+        "Tyrion Lannister", "Arya Stark", "Joffrey Baratheon",
+        "Petyr Baelish","Margaery Tyrell"]
+
         got_characters.cycle(3) { |name| puts name }
-        <br><br>
 
-=> Deanerys Targaryen<br>
-John Snow<br>
-Tyrion Lannister<br>
-Arya Stark<br>
-Joffrey Baratheon<br>
-Petyr Baelish<br>
-Margaery Tyrell<br>
-Deanerys Targaryen<br>
-John Snow<br>
-Tyrion Lannister<br>
-Arya Stark<br>
-Joffrey Baratheon<br>
-Petyr Baelish<br>
-Margaery Tyrell<br>
-Deanerys Targaryen<br>
-John Snow<br>
-Tyrion Lannister<br>
-Arya Stark<br>
-Joffrey Baratheon<br>
-Petyr Baelish<br>
-Margaery Tyrell
+        =>  Deanerys Targaryen
+            John Snow
+            Tyrion Lannister
+            Arya Stark
+            Joffrey Baratheon
+            Petyr Baelish
+            Margaery Tyrell
+            Deanerys Targaryen
+            John Snow
+            Tyrion Lannister
+            Arya Stark
+            Joffrey Baratheon
+            Petyr Baelish
+            Margaery Tyrell
+            Deanerys Targaryen
+            John Snow
+            Tyrion Lannister
+            Arya Stark
+            Joffrey Baratheon
+            Petyr Baelish
+            Margaery Tyrell
 
-        </pre></p>
+        </pre>
 
     <p>I'm still learning everything that this method can do and possible applications, but I hope this brief explanation is helpful!</p>
     <br>
