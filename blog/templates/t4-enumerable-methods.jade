@@ -1,0 +1,65 @@
+extends layout.jade
+
+<!-- // BLOG POST ====================================================== -->
+block title
+  title t4-enumerable-methods
+block content
+  section
+    h1 Enumerable Methods: #cycle
+    h4 2.5.2015
+    p
+      | I want to talk about a new enumerable method I"m learning about called #cycle. When this method is called on an array, the array will repeat forever. However, there is a way to stop it from repeating to infinity and crashing your program. One way is to include a `break` statement. Let"s say you have an array of Game Of Thrones characters. You want to cycle through that array until you get to Joffrey Baratheon, because, well, (SPOILER!) he"s dead. That would look something like this:
+    br
+    pre.
+              got_characters = ["Deanerys Targaryen", "John Snow", "Tyrion Lannister",
+              "Arya Stark", "Joffrey Baratheon", "Petyr Baelish", "Margaery Tyrell"]
+
+              got_characters.cycle { |name| puts name }
+              break if name == "Joffrey Baratheon"
+              end
+
+              => Deanerys Targaryen
+              John Snow
+              Tyrion Lannister
+              Arya Stark
+              nil
+
+
+    p
+      | Another way to keep the array from repeating forever with #cycle, is to include a positive integer as a parameter of #cycle. This will tell my block of code to repeat x number of times. Check it out below.
+    pre.
+
+              got_characters = ["Deanerys Targaryen", "John Snow",
+              "Tyrion Lannister", "Arya Stark", "Joffrey Baratheon",
+              "Petyr Baelish","Margaery Tyrell"]
+
+              got_characters.cycle(3) { |name| puts name }
+
+              =>  Deanerys Targaryen
+                  John Snow
+                  Tyrion Lannister
+                  Arya Stark
+                  Joffrey Baratheon
+                  Petyr Baelish
+                  Margaery Tyrell
+                  Deanerys Targaryen
+                  John Snow
+                  Tyrion Lannister
+                  Arya Stark
+                  Joffrey Baratheon
+                  Petyr Baelish
+                  Margaery Tyrell
+                  Deanerys Targaryen
+                  John Snow
+                  Tyrion Lannister
+                  Arya Stark
+                  Joffrey Baratheon
+                  Petyr Baelish
+                  Margaery Tyrell
+
+
+    p
+      | I"m still learning everything that this method can do and possible applications, but I hope this brief explanation is helpful!
+    br
+    br
+<!-- // END BLOG POST ====================================================== -->

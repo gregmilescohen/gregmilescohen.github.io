@@ -1,0 +1,45 @@
+extends layout.jade
+
+<!-- // BLOG POST ====================================================== -->
+block title
+  title t3-arrays-hashes
+block content
+  section
+    h1 Arrays vs. Hashes
+    h2 The Battle of the Century (but not really)
+    h4 1.28.2015
+    p
+      | The year is 1985, and Rocky Balboa is about to have the bout of his life against roided-up-Russian Ivan Drago. Drago is bigger, stronger, and the clear favorite to win. Rocky is the underdog. He"s just a tough cat from Philly (woot! woot!) trying to shock the world. Rocky isn"t as fancy. No frosted tips and no expensive gym equipment. That aint" Rock"s style. No, The Italian Stallion hangs upside down in a Russian barn and does sit-ups while holding a sack of potatoes. OK, I know you"re this probably isn"t the best analogy for arrays and hashes (I just LOVE Rocky IV), but I think I can draw some comparisons.
+    p
+      | Arrays are sort of like Rocky. Arrays certainly aren"t fancy, but they are extremely useful tools in Ruby. They simply allow us to store a list of single pieces of data and attach it to a variable. Arrays can be made up of integers, floats, strings, and even other arrays! An array looks like this:
+    pre.
+
+              Rocky = ["Philly", "tough", "south-paw"]
+
+
+    p
+      | If I want to call one of the objects in the array, I can do so by typing the name of the array followed by the location of the object in the array. So if I want to call "south-paw" I would type:
+    pre.
+              Rocky[2]
+
+    p There is so much more we can do with arrays, but that"s a story for another day.
+    p
+      | Now Hashes are more like Drago. They"re bigger, stronger, and not only can they store values, but they can assign each value to a designated "key"! The syntax for a literal hash looks something like this:
+    pre.
+              Drago = {
+                  :key1 => value1,
+                  :height => "6 ft. 8 inches",
+                  :actor => "Dolph Lundgren",
+              }
+
+    p
+      | Now say we wanted to call on the value "6 ft. 8 inches" from our "Drago" hash. We would just type the hash name, followed by the corresponding key in square brackets like so:
+    p
+      pre.
+                Drago[:height]
+
+    p
+      | If I can code an array and a hash, WE CAN ALL CODE AN ARRAY AND A HASH! (Rocky IV reference. Seriously I"m done now.)
+    br
+    br
+<!-- // END BLOG POST ====================================================== -->

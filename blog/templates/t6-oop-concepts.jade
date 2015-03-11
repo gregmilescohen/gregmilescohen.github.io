@@ -1,0 +1,75 @@
+extends layout.jade
+
+<!-- // BLOG POST ====================================================== -->
+block title
+  title t6-oop-concepts
+block content
+  section
+    h1 Ruby: Inheritance and Composition
+    h4 2.21.2015
+    p
+      | Inheritance and composition are two different strategies that can be used to write Classes and use shared methods between them. Inheritance literally &#8220;inherits&#8221; or applies all of the methods from the parent class (the class from which the methods are being given) onto the child class (the class that is inheriting the methods). An example of implicit inheritance looks something like this:
+    pre.
+              class Strings
+                def initialize(instrument)
+                  @instrument = instrument
+                end
+
+                def statement
+                  puts “I am a &#35;{@instrument} an string instrument”
+                end
+              end
+
+
+              class Brass < Strings
+              end
+
+
+    p
+      | `class Brass` now contains all of the methods from `class Strings`. If we want to change anything in our Brass class to make it different from our Strings class (which we do because they are different types of instruments), we can just add the changes to our class using the same method name. This is called explicit inheritance.
+    pre.
+              class Strings
+                def initialize(instrument)
+                  @instrument = instrument
+                end
+
+                def statement
+                  puts “I am a &#35;{@instrument} and I am part of the strings family”
+                end
+              end
+
+
+              class Brass < Strings
+                def statement
+                  puts “I am a &#35;{@instrument} and I am part of the brass family”
+                end
+              end
+
+    p
+      | In DBC, Composition is what we"ve been doing up to this point. Composition is more flexible than inheritance and can change. As opposed to inheritance, we use class and instance variables to call methods in other methods and classes. It essentially allows us to use methods of one class to define new methods and create new features in another class. Composition also allows our code to be much more secure, because we can control the scope of each method in every class. This is ideal and much less dangerous than using inheritance.
+    pre.
+        class Strings
+          def initialize(string_instr)
+            @string_instr = string_instr
+          end
+
+          def statement
+            puts “I am a &#35;{@string_instr} and I am part of the strings family”
+          end
+        end
+
+        class Brass
+          def initialize(brass_instr)
+            @brass_instr = brass_instr
+          end
+
+          def statement
+            puts “I am a &#35;{@brass_instr} and I am part of the brass family”
+          end
+        end
+
+    p
+      | It is generally a better idea to use composition rather than inheritance. Composition allows for more customization and flexibility of methods and classes, and more secure code because we can adjust the scope of each variable so that it can only be used in certain places. Hope some of this was helpful!
+    br
+    br
+<!-- // END BLOG POST ====================================================== -->
