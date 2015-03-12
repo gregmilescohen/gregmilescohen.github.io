@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+  // to animate nav page links
   $("#home").mouseenter(function() {
     $(this).animate({"margin-right": "25px"}, "fast");
   });
@@ -29,4 +31,6 @@ $(document).ready(function() {
   $("#blog").mouseleave(function() {
     $(this).animate({"margin-right": "0px"}, "fast");
   });
+
+
 });
