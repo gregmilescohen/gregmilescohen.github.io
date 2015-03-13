@@ -48,7 +48,7 @@ $(document).ready(function() {
     $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/twitter2-color.png");
   });
   $("#twitter").mouseleave(function() {
-    $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/twitter2-color.png");
+    $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/twitter2.png");
   });
   $("#facebook").mouseenter(function() {
     $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/facebook2-color.png");
