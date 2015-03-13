@@ -144,6 +144,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/blog\/templates\/c9-questions.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/blog\/templates\/c9-questions.jade",
+		"outputAbbreviatedPath": "\/blog\/c9-questions.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/blog\/templates\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
