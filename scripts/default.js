@@ -36,82 +36,51 @@ $(document).ready(function() {
 
 
 
-
-
-  $("#linkedin").mouseenter(function() {
-    $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin2-color.png");
+  $('#linkedin').on('mouseover', function(e){
+    e.preventDefault();
+    $('#linkedin img').attr('src', '../img/linkedin2-color.png');
   });
-  $("#linkedin").mouseleave(function() {
-    $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin2.png");
-  });
-  $("#twitter").mouseenter(function() {
-    $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/twitter2-color.png");
-  });
-  $("#twitter").mouseleave(function() {
-    $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/twitter2.png");
-  });
-  $("#facebook").mouseenter(function() {
-    $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/facebook2-color.png");
-  });
-  $("#facebook").mouseleave(function() {
-    $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/facebook2.png");
-  });
-  $("#instagram").mouseenter(function() {
-    $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/instagram2-color.png");
-  });
-  $("#instagram").mouseleave(function() {
-    $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/instagram2.png");
-  });
-  $("#github").mouseenter(function() {
-    $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/github2-color.png");
-  });
-  $("#github").mouseleave(function() {
-    $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/github2.png");
+  $('#linkedin').on('mouseleave', function(e){
+    e.preventDefault();
+    $('#linkedin img').attr('src', "../img/linkedin2.png");
   });
 
-  // $('#linkedin').on({
-  //   'mouseover' : function() {
-  //     $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin2-color.png");
-  //   },
-  //   'mouseout' : function() {
-  //     $(this).attr('src',"https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/linkedin2-color.png");
-  //   }
-  // });
 
-  // $('#twitter').on({
-  //   'mouseover' : function() {
-  //     $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/twitter2-color.png");
-  //   },
-  //   'mouseout' : function() {
-  //     $(this).attr('src',"https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/twitter2.png");
-  //   }
-  // });
+  $('#twitter').on('mouseover', function(e){
+    e.preventDefault();
+    $('#twitter img').attr('src', '../img/twitter2-color.png');
+  });
+  $('#twitter').on('mouseleave', function(e){
+    e.preventDefault();
+    $('#twitter img').attr('src', "../img/twitter2.png");
+  });
 
-  // $('#facebook').on({
-  //   'mouseover' : function() {
-  //     $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/facebook2-color.png");
-  //   },
-  //   'mouseout' : function() {
-  //     $(this).attr('src',"https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/facebook2.png");
-  //   }
-  // });
+  $('#facebook').on('mouseover', function(e){
+    e.preventDefault();
+    $('#facebook img').attr('src', '../img/facebook2-color.png');
+  });
+  $('#facebook').on('mouseleave', function(e){
+    e.preventDefault();
+    $('#facebook img').attr('src', "../img/facebook2.png");
+  });
 
-  // $('#instagram').on({
-  //   'mouseover' : function() {
-  //     $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/instagram2-color.png");
-  //   },
-  //   'mouseout' : function() {
-  //     $(this).attr('src',"https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/instagram2.png");
-  //   }
-  // });
+  $('#instagram').on('mouseover', function(e){
+    e.preventDefault();
+    $('#instagram img').attr('src', '../img/instagram2-color.png');
+  });
+  $('#instagram').on('mouseleave', function(e){
+    e.preventDefault();
+    $('#instagram img').attr('src', "../img/instagram2.png");
+  });
 
-  // $('#github').on({
-  //   'mouseover' : function() {
-  //     $(this).attr('src', "https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/github2-color.png");
-  //   },
-  //   'mouseout' : function() {
-  //     $(this).attr('src',"https://raw.githubusercontent.com/gregmilescohen/gregmilescohen.github.io/master/img/github2.png");
-  //   }
-  // });
+  $('#github').on('mouseover', function(e){
+    e.preventDefault();
+    $('#github img').attr('src', '../img/github2-color.png');
+  });
+  $('#github').on('mouseleave', function(e){
+    e.preventDefault();
+    $('#github img').attr('src', "../img/github2.png");
+  });
+
 
 });

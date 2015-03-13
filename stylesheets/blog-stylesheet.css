@@ -103,7 +103,7 @@ section a {
   font-color: #ffffff;
 }
 
-#social {
+.social {
   position: relative;
   display: inline-block;
   margin-top: 10px;
