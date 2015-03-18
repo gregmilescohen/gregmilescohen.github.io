@@ -24,7 +24,7 @@ h1 {
   text-align: left;
   color: #000000;
   font-size: 4em;
-  font-family: Raleway;
+  font-family: 'raleway', Fallback, sans-serif;
   font-weight: bold;
   margin-left: 30%;
   margin-right: 10;
@@ -36,7 +36,7 @@ h1 {
 
 h2 {
   text-align: left;
-  font-family: Raleway;
+  font-family: 'raleway', Fallback, sans-serif;
   font-style: italic;
   color: black;
   margin-left: 30%;
@@ -50,7 +50,7 @@ h4 {
   text-align: left;
   margin-bottom: 25px;
   margin-left: 30%;
-  font-family: Raleway;
+  font-family: 'raleway', Fallback, sans-serif;
   color: black;
   font-size: 1em;
 
@@ -61,7 +61,7 @@ h4 {
 p {
   margin-left: 30%;
   margin-right: 25%;
-  font-family: Raleway;
+  font-family: 'raleway', Fallback, sans-serif;
   font-size: 1em;
   color: black;
 
