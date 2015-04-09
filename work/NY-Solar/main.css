@@ -1,0 +1,169 @@
+body {
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 17px;
+}
+
+p {
+	margin: 20px 0;
+}
+
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+
+
+h1 {
+	font-size: 20px;
+	background-color: #333;
+	color: #eee;
+	padding: 10px;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 15px;
+	color: #1a619a;
+	border-bottom: 1px solid #1a619a;
+	padding-bottom: 3px;
+	margin-top: 20px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 4px;
+	margin-left: 16px;
+}
+
+a {
+	color: #dd692b;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#header {
+	background-image: url(images/solar-pattern.png);
+	background-color: #000;
+	padding: 9px 0 18px 50px;
+}
+
+#container {
+	width: 820px;
+	margin-left: 50px;
+}
+
+#nav {
+	background-color: #487baf;
+	padding: 10px 50px;
+	border-top: 1px solid #255890;
+	margin-bottom: 30px;
+	white-space: nowrap;
+}
+
+#nav a {
+	color: #eee;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 40px;
+}
+
+#nav a:hover {
+	border-top: 1px solid #fff;
+	padding-top: 10px;
+}
+
+#main {
+	width: 620px;
+	float: left;
+}
+
+#aside {
+	width: 162px;
+	background-color: #666;
+	float: right;
+	color: #eee;
+}
+
+#aside p {
+	margin: 12px;
+	font-size: 10px;
+	font-family: Verdana, sans-serif;
+}
+
+#aside img {
+	border-bottom: 1px solid #fff;
+}
+
+#footer {
+	clear: both;
+	font-size: 11px;
+	color: #999;
+	text-transform: uppercase;
+	border-top: 1px solid #ddd;
+	padding-left: 50px;
+}
+
+fieldset {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #ddd;
+	margin-top: 30px;
+	margin-left: 0;
+	padding-left: 0;
+	padding-bottom: 12px;
+}
+
+fieldset legend {
+	font-size: 15px;
+	color: #1a619a;
+	font-weight: bold;
+	padding-left: 0;
+	padding-bottom: 12px;
+}
+
+input {
+	padding: 2px 4px;
+}
+
+label {
+	color: #333;
+	font-size: 11px;
+}
+
+.labelSpace, select, #nameField {
+	margin-right: 30px;
+}
+
+#comments {
+	border: 0;
+}
+
+#commentsField {
+	display: block;
+}
+
+#submit {
+	color: #fff0f5;
+	background-color: #1a619a;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 1px solid #999;
+	padding: 8px;
+	margin-bottom: 24px;
+}
+
+#submit:hover {
+	color: #1a619a;
+	background-color: #bbb;
+}
