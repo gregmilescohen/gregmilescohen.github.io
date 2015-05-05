@@ -113,10 +113,10 @@ OVERLAY EFFECT
   transition: 0.6s;
 }
 
-.overlay-content:hover { opacity: 1; }
+.no-touch .overlay-content:hover { opacity: 1; }
 
-.overlay-content:after,
-.overlay-content:before {
+.no-touch .overlay-content:after,
+.no-touch .overlay-content:before {
   bottom: 1em;
   content: '';
   left: 1em;
@@ -131,22 +131,22 @@ OVERLAY EFFECT
   transition: 0.6s 0.2s;
 }
 
-.overlay-content:before {
+.no-touch .overlay-content:before {
   border-bottom: none;
   border-top: none;
   left: 2em;
   right: 2em;
 }
 
-.overlay-content:after {
+.no-touch .overlay-content:after {
   border-left: none;
   border-right: none;
   bottom: 2em;
   top: 2em;
 }
 
-.overlay-content:hover:after,
-.overlay-content:hover:before {
+.no-touch .overlay-content:hover:after,
+.no-touch .overlay-content:hover:before {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
