@@ -13,25 +13,34 @@ main {
   background-size: cover;
 }
 #main-nav {
-  position: absolute;
+  background: #fff;
+  padding: 9px 0 6px;
+  position: relative;
   display: inline-block;
   text-align: center;
   width: 100%;
   margin: auto;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 #main-nav a {
-  padding:10px;
+  /*padding: 21px;*/
   text-decoration: none;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
 }
 #main-nav a:hover {
-  color: rgba(255,255,255, 0.8);
-  outline: 1px black;
+  opacity: 0.4;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+}
+
+#main-nav #nav-container {
+  max-width: 1000px;
+  margin: auto;
 }
 
 main img {
@@ -58,6 +67,7 @@ main p {
   position: relative;
   background-color: #fff;
   max-width: 1500px;
+  margin: auto;
 }
 
 #portfolio-container {
@@ -85,36 +95,26 @@ main p {
 }
 
 #nyc {
-  height: 250px;
-  width: 300px;
   background: url(img/cab-thumb@2x.jpg);
   background-size: cover;
 }
 
 #flix {
-  height: 250px;
-  width: 300px;
   background: url(img/flix-thumb@2x.jpg) left top;
   background-size: cover;
 }
 
 #solar {
-  height: 250px;
-  width: 300px;
   background: url(img/solar-thumb@2x.jpg) top right;
   background-size: cover;
 }
 
 #jive-factory {
-  height: 250px;
-  width: 300px;
   background: url(img/jivefactory-thumb@2x.jpg);
   background-size: cover;
 }
 
 #tastify {
-  height: 250px;
-  width: 300px;
   background: url(img/tastify-thumb@2x.jpg);
   background-size: cover;
 }
@@ -197,7 +197,7 @@ OVERLAY EFFECT
 #about-section {
   display: none;
   position: relative;
-  background-color: #f5f5f5;
+  background-color: #fff;
   overflow: hidden;
 }
 
@@ -294,5 +294,22 @@ footer hr {
   #about-content {
     display: block;
     width:100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #portfolio-section {
+    overflow-x: scroll;
+  }
+  #portfolio-section .work-example {
+    height: 200px;
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 505px) and (max-width: 717px) {
+  #portfolio-section .work-example {
+    height: 325px;
+    width: 425px;
   }
 }
