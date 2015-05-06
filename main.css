@@ -9,7 +9,7 @@ body {
 }
 
 main {
-  background: url(img/central-park-1.jpg) center bottom;
+  background: url(img/central-park-1.jpg) center top;
   background-size: cover;
 }
 #main-nav {
@@ -82,6 +82,41 @@ main p {
   background-color: #fff;
   height: 250px;
   width: 300px;
+}
+
+#nyc {
+  height: 250px;
+  width: 300px;
+  background: url(img/cab-thumb@2x.jpg);
+  background-size: cover;
+}
+
+#flix {
+  height: 250px;
+  width: 300px;
+  background: url(img/flix-thumb@2x.jpg) left top;
+  background-size: cover;
+}
+
+#solar {
+  height: 250px;
+  width: 300px;
+  background: url(img/solar-thumb@2x.jpg) top right;
+  background-size: cover;
+}
+
+#jive-factory {
+  height: 250px;
+  width: 300px;
+  background: url(img/jivefactory-thumb@2x.jpg);
+  background-size: cover;
+}
+
+#tastify {
+  height: 250px;
+  width: 300px;
+  background: url(img/tastify-thumb@2x.jpg);
+  background-size: cover;
 }
 
 /*============================
