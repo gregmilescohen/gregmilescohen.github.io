@@ -36,6 +36,7 @@ main {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+  letter-spacing: 3px;
   color: #000;
 }
 #main-nav a:hover {
@@ -53,8 +54,15 @@ main {
 main img {
   display: inline-block;
   margin: auto;
-  padding: 100px 0;
+  padding: 80px 0 100px;
 }
+
+/*#main-logo #occupation {
+  position: absolute;
+  background: #fff;
+  width: 350px;
+  height: 150px;
+}*/
 
 main p {
   display: inline-block;
@@ -64,10 +72,13 @@ main p {
   color: #fff;
   position: absolute;
   margin-top: -105px;
-  font-size: 16px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  /*font-style: italic;*/
+  font-weight: 300;
+  letter-spacing: 3px;
 }
 
 #portfolio-section {
