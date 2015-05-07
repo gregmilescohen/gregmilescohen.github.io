@@ -11,6 +11,33 @@
   padding-top: 25px;
 }
 
+#description h4 {
+	padding-bottom: 10px;
+}
+
+#description ul {
+	list-style-type: none;
+	padding:0;
+}
+
+#description ul li {
+	padding-bottom: 10px;
+}
+
+img#main-img {
+	padding-top: 20px;
+}
+
+img#img1, img#img2, img#img3 {
+	padding-bottom: 20px;
+}
+
+#site-button {
+	padding: 15px;
+}
+
+
+
 @media screen and (max-width: 767px) {
 	#description #text {
 		/*text-align: center;*/

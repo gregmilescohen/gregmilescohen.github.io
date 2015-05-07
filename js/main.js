@@ -1,13 +1,13 @@
 $(document).ready(function(){
     $("#about").click(function(){
         $("#contact-section").slideUp("slow");
-        $("main, #portfolio-section, footer").animate({opacity: "0.6"});
+        $("main, #portfolio-section, footer").animate({opacity: "0.4"});
         $("#about-section").slideDown("slow");
     });
 
     $("#contact").click(function(){
         $("#about-section").slideUp("slow");
-        $("main, #portfolio-section, footer").animate({opacity: "0.6"});
+        $("main, #portfolio-section, footer").animate({opacity: "0.4"});
         $("#contact-section").slideDown("slow");
     });
 

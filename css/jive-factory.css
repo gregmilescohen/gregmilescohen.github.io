@@ -1,0 +1,78 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	padding: 80px 0 30px;
+	color: #ddd;
+	background: #222 url(../img/bg-tile.png) center top;
+}
+img {
+	max-width: 100%;
+}
+hr {
+	border-color: #555;
+}
+hr.visible-xs {
+	clear: both;
+}
+.well {
+	background: #333;
+	border-color: #444;
+}
+.btn-default {
+	background: #444;
+	border-color: #666;
+	color: #ddd;
+}
+.btn-default:hover {
+	background: #555;
+	color: #ddd;
+}
+.img-thumbnail {
+	background-color: #444;
+	border-color: #666;
+}
+nav .glyphicon-comment {
+	font-size: 1.2em;
+	line-height: 0;
+	margin-left: 10px;
+	position: relative;
+	top: 0.2em;
+}
+
+@media only screen and (max-width: 599px) {
+	footer .col-xs-6 {
+		width: 100%;	
+	}
+	footer .nav-pills.pull-right {
+		float: none !important;
+		margin-left: -15px;
+	}
+}
+@media only screen and (min-width: 371px) and (max-width: 767px) {
+	.img-thumbnail {
+		float: right;
+		width: 40%;
+		margin: 10px 0 20px 20px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	.upcoming-shows .btn {
+		margin-bottom: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
