@@ -329,7 +329,7 @@ OVERLAY EFFECT
   display: inline-block;
   height: 32px;
   width: 32px;
-  margin-left: 25px;
+  margin:0 20px;
 }
 
 .social-button:hover {
