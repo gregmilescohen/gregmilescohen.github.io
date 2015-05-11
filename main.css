@@ -18,9 +18,12 @@ p {
 
 a {
   transition: all .5s;
+  /*to get rid of strange text rendering in safari*/
+  -webkit-transform: translateZ(0px);
 }
 a:hover {
   transition: all .5s;
+  -webkit-transform: translateZ(0px);
 }
 main {
   background: url(img/central-park-1.jpg) center top;
@@ -50,6 +53,7 @@ main {
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -ms-transition: all .5s;
+  -webkit-transform: translateZ(0px);
 }
 
 #main-nav #nav-container {
@@ -170,6 +174,8 @@ OVERLAY EFFECT
   right: 0;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  -webkit-transform: translateZ(0px);
+
 }
 
 .no-touch .overlay-content:hover { opacity: 1; }
@@ -188,6 +194,7 @@ OVERLAY EFFECT
   transform: scale(1.5);
   -webkit-transition: 0.6s 0.2s;
   transition: 0.6s 0.2s;
+  -webkit-transform: translateZ(0px);
 }
 
 .no-touch .overlay-content:before {
@@ -239,6 +246,7 @@ OVERLAY EFFECT
 
 #about-section .close-wrapper {
   /*padding: 0 0 15px 0;*/
+  -webkit-transform: translateZ(0px);
 }
 
 #about-section a#about-close {
@@ -248,10 +256,12 @@ OVERLAY EFFECT
   padding: 0 6px;
   /* outline: 1px solid black; */
   opacity: 0.5;
+  -webkit-transform: translateZ(0px);
 }
 
 #about-section a#about-close:hover {
   opacity: 1;
+  -webkit-transform: translateZ(0px);
 }
 
 #about-section a, #contact-section a {
@@ -271,15 +281,18 @@ OVERLAY EFFECT
 #about-section #about-content p a img {
   padding-right: 8px;
   text-align: center;
+  -webkit-transform: translateZ(0px);
 }
 
 #resume {
   display: inline;
+  -webkit-transform: translateZ(0px);
 }
 
 #about-content #pdf-icon {
   height: 32px;
   width: 40px;
+  -webkit-transform: translateZ(0px);
 }
 
 #contact-section {
@@ -293,6 +306,7 @@ OVERLAY EFFECT
   width: 25px;
   margin: auto;
   padding-bottom: 10px;
+  -webkit-transform: translateZ(0px);
 }
 
 #contact-section a#contact-close {
@@ -301,20 +315,24 @@ OVERLAY EFFECT
   /* margin: auto; */
   padding: 0 6px;
   opacity: 0.5;
+  -webkit-transform: translateZ(0px);
 }
 
 #contact-section a#contact-close:hover {
   opacity: 1;
+  -webkit-transform: translateZ(0px);
 }
 
 #contact-email {
   margin-left: auto;
   text-align: center;
   margin-top: 24px;
+  -webkit-transform: translateZ(0px);
 }
 #contact-email a{
   font-family: 'Lato', sans-serif;
   font-size: 20px;
+  -webkit-transform: translateZ(0px);
 }
 
 #contact-email h2, #contact-email h4 {
@@ -323,21 +341,32 @@ OVERLAY EFFECT
 
 #social {
   text-align: center;
+  -webkit-transform: translateZ(0px);
+  padding-bottom: 15px;
 }
+
+/*#social img {
+  -webkit-transform: translateZ(0px);
+}*/
 
 .social-button {
   display: inline-block;
   height: 32px;
   width: 32px;
   margin:0 20px;
+  transition: all .5s;
+  -webkit-transform: translateZ(0px);
 }
 
 .social-button:hover {
   opacity: 0.4;
+  transition: all .5s;
+  -webkit-transform: translateZ(0px);
 }
 
 #social a {
   padding: 15px;
+  -webkit-transform: translateZ(0px);
 }
 
 footer p {
