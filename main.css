@@ -281,7 +281,7 @@ OVERLAY EFFECT
 #about-section #about-content p a img {
   padding-right: 8px;
   text-align: center;
-  -webkit-transform: translateZ(0px);
+  /*-webkit-transform: translateZ(0px);*/
 }
 
 #resume {
@@ -292,7 +292,7 @@ OVERLAY EFFECT
 #about-content #pdf-icon {
   height: 32px;
   width: 40px;
-  -webkit-transform: translateZ(0px);
+  /*-webkit-transform: translateZ(0px);*/
 }
 
 #contact-section {
@@ -366,12 +366,12 @@ OVERLAY EFFECT
 
 #social a {
   padding: 15px;
-  -webkit-transform: translateZ(0px);
+  /*-webkit-transform: translateZ(0px);*/
 }
 
 footer p {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   margin: 0;
 }
 
