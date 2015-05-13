@@ -91,6 +91,10 @@ main p {
   letter-spacing: 3px;
 }
 
+#about-content p:nth-child(3) {
+  padding-bottom: 15px;
+}
+
 #portfolio-section {
   position: relative;
   background-color: #fff;
