@@ -9,7 +9,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6,p,a {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 p {
@@ -148,6 +148,16 @@ main p {
 
 #tastify {
   background: url(img/tastify-thumb@2x.jpg);
+  background-size: cover;
+}
+
+#ux {
+  background: url(img/ux-thumb@2x.jpg);
+  background-size: cover;
+}
+
+#zen-garden {
+  background: url(img/zen-garden-logo.png);
   background-size: cover;
 }
 
