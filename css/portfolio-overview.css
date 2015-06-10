@@ -44,6 +44,13 @@ p#footer {
   padding-bottom: 10px;
 }
 
+.ux h4 {
+	text-align: center;
+	padding: 15px;
+	font-style: italic;
+	font-size: 16px;
+}
+
 @media screen and (max-width: 767px) {
 	#description #text {
 		/*text-align: center;*/
