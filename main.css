@@ -156,6 +156,11 @@ main p {
   background-size: cover;
 }
 
+#zen-garden {
+  background: url(img/zen-garden-logo.png);
+  background-size: cover;
+}
+
 /*============================
 OVERLAY EFFECT
 ============================*/
