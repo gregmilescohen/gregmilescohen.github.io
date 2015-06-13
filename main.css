@@ -66,6 +66,7 @@ main {
   color: #fff;
   /* width: 185px; */
   margin: 11px;
+  cursor: pointer;
 }
 #main-nav a:hover {
   opacity: 0.4;
