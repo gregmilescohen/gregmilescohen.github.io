@@ -536,6 +536,14 @@ footer hr {
     letter-spacing: 5px;
     top: 20%;
   }
+  #about-section {
+    display: none;
+    height: 100vh;
+    width: 100vh;
+    position: relative;
+    background: #fff;
+    overflow-y: scroll;
+  }
 }
 
 @media screen and (max-width: 350px) {
