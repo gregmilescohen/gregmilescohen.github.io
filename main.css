@@ -251,6 +251,11 @@ main p{
   background-size: cover;
 }
 
+#rovie {
+  background: url(img/rovie/get-rovie.png);
+  background-size: cover;
+}
+
 /*============================
 OVERLAY EFFECT
 ============================*/
