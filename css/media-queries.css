@@ -1,0 +1,53 @@
+@media screen and (max-width: 920px) {
+  #portfolio-section .work-example {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #about-section #about-img img {
+    width: 100%;
+  }
+  #about-section > img {
+    display: block;
+    width: 100%;
+  }
+  #about-content {
+    display: block;
+    width: 100%;
+    padding: 0 32px;
+  }
+
+  #portfolio-section .work-example {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #logo {
+    width: 250px;
+    height: 250px;
+    top: 40%;
+    transform: translateY(25%);
+  }
+
+  #portfolio-button {
+     width: 250px;
+     height: 100px;
+     display: block;
+     margin: auto;
+     margin-top: 70px;
+  }
+
+  #resume-button {
+     width: 250px;
+     height: 100px;
+     margin-top: -10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #portfolio-section {
+    overflow-x: scroll;
+  }
+}
