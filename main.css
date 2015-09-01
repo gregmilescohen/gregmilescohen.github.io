@@ -51,7 +51,8 @@ main {
   display: block;
   margin: auto;
   top: 40%;
-  transform: translateY(40%);
+  -webkit-transform: translateY(40%);
+  -moz-transform: translateY(40%);
 }
 #logo:hover {
   /*transition: all .5s;*/
