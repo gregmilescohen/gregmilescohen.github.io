@@ -1,27 +1,34 @@
 $(document).ready(function(){
     $("#about").click(function(){
-        // $("#contact-section").slideUp("ease");
-        $("main, #portfolio-section, footer").animate({opacity: "0.4"});
         $("#about-section").slideDown("ease");
+        $(function() {
+
+           var docHeight = $(document).height();
+
+           $("main").append("<div id='overlay'></div>");
+
+           $("#overlay")
+              .height(docHeight)
+              .css({
+                 'opacity' : 0.7,
+                 'position': 'fixed',
+                 'top': 0,
+                 'left': 0,
+                 'background-color': 'black',
+                 'width': '100%',
+                 'z-index': 5000,
+                 'display': 'block'
+              });
+
+        });
     });
 
-    // $("#contact").click(function(){
-    //     $("#about-section").slideUp("ease");
-    //     $("main, #portfolio-section, footer").animate({opacity: "0.4"});
-    //     $("#contact-section").slideDown("ease");
-    // });
 
     $("#about-close").click(function(){
         $("#about-section").slideUp("ease");
-        $("main, #portfolio-section, footer").animate({opacity: "1"});
-        $("main, #portfolio-section, footer").click(function(){
-            });
+        $("#overlay").remove();
     });
 
-    // $("#contact-close").click(function(){
-    //     $("#contact-section").slideUp("ease");
-    //     $("main, #portfolio-section, footer").animate({opacity: "1"});
-    // });
 
     $("#portfolio").click(function() {
     var offset = 20; //Offset of 20px

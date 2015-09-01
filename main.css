@@ -18,13 +18,13 @@ p {
 }
 
 a {
-  transition: all .5s;
+  /*transition: all .5s;*/
   /*to get rid of strange text rendering in safari*/
   -webkit-transform: translateZ(0px);
   text-decoration: none;
 }
 a:hover {
-  transition: all .5s;
+  /*transition: all .5s;*/
   -webkit-transform: translateZ(0px);
 }
 main {
@@ -95,6 +95,7 @@ main {
   margin: auto;*/
   padding:0;
   margin:0;
+  background-color: #000;
 }
 
 #portfolio-container {
@@ -257,6 +258,7 @@ OVERLAY EFFECT
   position: relative;
   background: #fff;
   overflow: hidden;
+  z-index: 99999999;
 }
 
 
@@ -364,42 +366,62 @@ OVERLAY EFFECT
   display: inline;
 }
 
-#social {
-  text-align: center;
-  -webkit-transform: translateZ(0px);
-  padding-bottom: 15px;
+#divider {
+  display: block;
+  height: 100px;
+  background-color: #cecece;
+  width: 100%;
+  /* z-index: 999; */
+  padding: 35px;
 }
 
-/*#social img {
-  -webkit-transform: translateZ(0px);
-}*/
-
-.social-button {
-  display: inline-block;
-  height: 32px;
-  width: 32px;
-  margin:0 20px;
-  transition: all .5s;
-  /*-webkit-transform: translateZ(0px);*/
-}
-
-.social-button:hover {
-  opacity: 0.4;
-  transition: all .5s;
-  /*-webkit-transform: translateZ(0px);*/
-}
-
-#social a {
-  padding: 15px;
-  /*-webkit-transform: translateZ(0px);*/
+footer {
+  background-color: #000;
 }
 
 footer p {
-  text-align: center;
+  text-align: left;
   padding-bottom: 20px;
   margin: 0;
+  padding-left: 35px;
 }
 
-footer hr {
+/*footer hr {
   border-color: rgba(95, 95, 95, 0.2);
+}*/
+
+#footer-logo {
+  width: 300px;
+  padding: 35px;
+  /* margin-left: 20%; */
+  display: inline-block;
+  /* float: right; */
+  right: 0;
+}
+
+#social-icons {
+  display: inline-block;
+}
+
+ul#social {
+  list-style-type: none;
+  /* padding-left: 99px; */
+  display: inline-block;
+  /* float: left; */
+  padding: 0;
+  /* padding-top: 50px; */
+  /* margin-top: 90px; */
+}
+ul#social li {
+  display: inline-block;
+}
+ul#social li a{
+  opacity: .7;
+}
+ul#social li a:hover {
+  opacity: 1;
+}
+ul#social li img{
+  width: 50px;
+  padding-top: 186px;
 }
