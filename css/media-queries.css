@@ -4,6 +4,23 @@
   }
 }
 
+@media max-width(750px) and (orientation: landscape) {
+
+  #logo {
+    width: 200px;
+    height: 200px;
+    transform: translateY(10%);
+  }
+  #portfolio-button {
+    width: 200px;
+    margin-top: 28px;
+  }
+  #resume-button {
+    width: 200px;
+    margin-top: -26px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #about-section #about-img img {
     width: 100%;
@@ -21,6 +38,29 @@
   #portfolio-section .work-example {
     width: 100%;
   }
+
+  #footer-logo {
+    display: block;
+    margin: auto;
+  }
+  #social-icons {
+    display: block;
+    text-align: center;
+  }
+  ul#social {
+    margin-top: -30px;
+  }
+  ul#social li img {
+    padding-top: 0;
+  }
+  ul#social li a {
+    opacity: 1;
+  }
+  footer p {
+    text-align: center;
+    padding-left: 0;
+  }
+
 }
 
 @media screen and (max-width: 470px) {
