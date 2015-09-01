@@ -128,6 +128,11 @@ main {
   margin-right: -4px;
 }
 
+#filler-img {
+  background: url(img/thumbs-up.jpg) center right;
+  background-size: cover;
+}
+
 #nyc {
   background: url(img/cab-thumb@2x.jpg);
   background-size: cover;
@@ -424,4 +429,19 @@ ul#social li a:hover {
 ul#social li img{
   width: 50px;
   padding-top: 186px;
+}
+
+#email {
+  color: #777;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+#email:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+p.text-muted span {
+  font-weight: 700;
+  font-size: 28px;
 }

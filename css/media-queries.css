@@ -2,6 +2,9 @@
   #portfolio-section .work-example {
     width: 50%;
   }
+  #portfolio-section .work-example:last-child {
+    display: none;
+  }
 }
 
 @media max-width(750px) and (orientation: landscape) {
@@ -38,6 +41,10 @@
 
   #portfolio-section .work-example {
     width: 100%;
+  }
+
+  #filler-img {
+    display: none;
   }
 
   #footer-logo {
