@@ -429,7 +429,7 @@ ul#social li a:hover {
 }
 ul#social li img{
   width: 50px;
-  padding-top: 186px;
+  margin-top: 186px;
 }
 
 #email {
