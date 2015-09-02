@@ -60,6 +60,7 @@
   }
   ul#social li img {
     padding-top: 0;
+    margin-top: 0;
   }
   ul#social li a {
     opacity: 1;
