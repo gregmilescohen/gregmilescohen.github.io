@@ -71,6 +71,20 @@
 
 }
 
+@media screen and (max-width: 550px) {
+  footer p.text-muted span::before {
+    content: none;
+  }
+  #email {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+  p.text-muted span {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 470px) {
   #logo {
     width: 250px;
