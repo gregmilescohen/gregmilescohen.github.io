@@ -422,10 +422,10 @@ ul#social li {
   display: inline-block;
 }
 ul#social li a{
-  opacity: .7;
+  opacity: 1;
 }
 ul#social li a:hover {
-  opacity: 1;
+  opacity: .6;
 }
 ul#social li img{
   width: 50px;
@@ -442,7 +442,12 @@ ul#social li img{
   text-decoration: none;
 }
 
-p.text-muted span {
-  font-weight: 700;
+footer p.text-muted span::before {
+  content: '  |  ';
   font-size: 28px;
+  font-weight: 700;
+}
+
+p.text-muted span {
+  font-size: 14px;
 }
