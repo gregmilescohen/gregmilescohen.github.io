@@ -1,6 +1,7 @@
 $(document).ready(function(){
-    $("#about").click(function(){
+    $("#logo").click(function(){
         $("#about-section").slideDown("ease");
+        $("#main-nav").slideDown("ease");
         $(function() {
 
            var docHeight = $(document).height();
@@ -30,7 +31,7 @@ $(document).ready(function(){
     });
 
 
-    $("#portfolio").click(function() {
+    $("#portfolio-button").click(function() {
     var offset = 20; //Offset of 20px
 
     $('html, body').animate({
