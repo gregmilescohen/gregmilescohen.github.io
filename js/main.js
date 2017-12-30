@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#logo").click(function(){
         $("#about-section").slideDown("ease");
-        $("#main-nav").slideDown("ease");
+        // $("#main-nav").slideDown("ease");
         $(function() {
 
            var docHeight = $(document).height();
@@ -15,11 +15,12 @@ $(document).ready(function(){
                  'position': 'fixed',
                  'top': 0,
                  'left': 0,
-                 'background-color': 'black',
+                 'background-color': 'white',
                  'width': '100%',
-                 'z-index': 5000,
+                 'z-index': 10,
                  'display': 'block'
               });
+            $('.lightbox').css('display','block');
 
         });
     });
