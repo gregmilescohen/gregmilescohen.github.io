@@ -6,20 +6,21 @@ $(document).ready(function(){
 
            var docHeight = $(document).height();
 
-           $("main").append("<div id='overlay'></div>");
+           $("#background").prepend("<div id='overlay'></div>");
 
            $("#overlay")
               .height(docHeight)
-              .css({
-                 'opacity' : 0.7,
-                 'position': 'fixed',
-                 'top': 0,
-                 'left': 0,
-                 'background-color': 'white',
-                 'width': '100%',
-                 'z-index': 10,
-                 'display': 'block'
-              });
+              // .css({
+              //    'opacity' : 0.95,
+              //    'position': 'fixed',
+              //    'top': 0,
+              //    'left': 0,
+              //    'background-color': 'white',
+              //    'width': '100%',
+              //    'height': '100%',
+              //    'z-index': 10,
+              //    'display': 'block'
+              // });
             $('.lightbox').css('display','block');
 
         });
