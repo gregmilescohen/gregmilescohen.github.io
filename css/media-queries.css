@@ -37,6 +37,9 @@
     display: block;
     width: 100%;
     padding: 0 32px;
+    top: 5%;
+    left: 0; 
+    transform: none; 
   }
 
   #portfolio-section .work-example {
