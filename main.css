@@ -466,7 +466,7 @@ ul#social li img{
 #email {
   color: #777;
   font-size: 18px;
-  letter-spacing: 2px;
+  /*letter-spacing: 2px;*/
 }
 #email:hover {
   color: #fff;
