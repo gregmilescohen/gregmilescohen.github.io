@@ -1,6 +1,41 @@
 $(document).ready(function(){
-    $("#logo").click(function(){
-        $("#about-section").slideDown("ease");
+ 
+ //FLASH LOGO-HOVER 2X ON PAGELOAD 
+  setTimeout(function(){
+      $('#logo').css({
+        'background': 'url(img/GMC-logo-hover.svg) no-repeat',
+        'transition': 'background .2s',
+        '-webkit-transition': 'background .2s',
+      });
+  },1000);
+
+  setTimeout(function(){
+      $('#logo').css({
+        'background': 'url(img/GMC-logo-new.svg) no-repeat',
+        'transition': 'background .2s',
+        '-webkit-transition': 'background .2s',
+      });
+  },2000);
+
+  setTimeout(function(){
+      $('#logo').css({
+        'background': 'url(img/GMC-logo-hover.svg) no-repeat',
+        'transition': 'background .2s',
+        '-webkit-transition': 'background .2s',
+      });
+  },3500);
+
+  setTimeout(function(){
+      $('#logo').css({
+        'background': 'url(img/GMC-logo-new.svg) no-repeat',
+        'transition': 'background .2s',
+        '-webkit-transition': 'background .2s',
+      });
+  },4500);
+  
+
+      $("#logo").click(function(){
+        $("#about-section").fadeIn("ease");
         // $("#main-nav").slideDown("ease");
         $(function() {
 
@@ -26,6 +61,11 @@ $(document).ready(function(){
         });
     });
 
+    $('button.close').click(function(){
+      $('#about-section').fadeOut('ease').css('display','none')
+      $('#overlay').fadeOut('ease').css('display','none')
+
+    });
 
     $("#about-close").click(function(){
         $("#about-section").slideUp("ease");
