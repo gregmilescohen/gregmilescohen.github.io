@@ -32,6 +32,12 @@ a:hover {
   min-height:100vh;
   background: url(img/design-things.jpg) center;
   background-size: cover;
+  /*filter: contrast(170%);*/
+}
+#nav-container{
+  height:100vh;
+  min-height:100vh;
+  background-color: rgba(0,0,0,.4);
 }
 .main-overlay {
   margin: 0;
