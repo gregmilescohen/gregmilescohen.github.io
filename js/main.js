@@ -7,32 +7,32 @@ $(document).ready(function(){
         'transition': 'background .2s',
         '-webkit-transition': 'background .2s',
       });
-  },1000);
+  },600);
   setTimeout(function(){
       $('#logo').css({
         'background': 'url(img/GMC-logo-new.svg) no-repeat',
         'transition': 'background .2s',
         '-webkit-transition': 'background .2s',
       });
-  },2000);
+  },1400);
   setTimeout(function(){
       $('#logo').css({
         'background': 'url(img/GMC-logo-hover.svg) no-repeat',
         'transition': 'background .2s',
         '-webkit-transition': 'background .2s',
       });
-  },3000);
+  },2000);
   setTimeout(function(){
       $('#logo').css({
         'background': 'url(img/GMC-logo-new.svg) no-repeat',
         'transition': 'background .2s',
         '-webkit-transition': 'background .2s',
       });
-  },4000);
+  },2800);
   //reenable hover state
   setTimeout(function(){
     $('#logo').css('background', '');
-  },4100);
+  },2801);
   
 
       $("#logo").click(function(){
