@@ -8,7 +8,6 @@ $(document).ready(function(){
         '-webkit-transition': 'background .2s',
       });
   },1000);
-
   setTimeout(function(){
       $('#logo').css({
         'background': 'url(img/GMC-logo-new.svg) no-repeat',
@@ -16,22 +15,24 @@ $(document).ready(function(){
         '-webkit-transition': 'background .2s',
       });
   },2000);
-
   setTimeout(function(){
       $('#logo').css({
         'background': 'url(img/GMC-logo-hover.svg) no-repeat',
         'transition': 'background .2s',
         '-webkit-transition': 'background .2s',
       });
-  },3500);
-
+  },3000);
   setTimeout(function(){
       $('#logo').css({
         'background': 'url(img/GMC-logo-new.svg) no-repeat',
         'transition': 'background .2s',
         '-webkit-transition': 'background .2s',
       });
-  },4500);
+  },4000);
+  //reenable hover state
+  setTimeout(function(){
+    $('#logo').css('background', '');
+  },4100);
   
 
       $("#logo").click(function(){
