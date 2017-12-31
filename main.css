@@ -37,7 +37,7 @@ a:hover {
 #nav-container{
   height:100vh;
   min-height:100vh;
-  background-color: rgba(0,0,0,.4);
+  /*background-color: rgba(0,0,0,.4);*/
 }
 .main-overlay {
   margin: 0;
