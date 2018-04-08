@@ -27,11 +27,17 @@ a:hover {
   /*transition: all .5s;*/
   -webkit-transform: translateZ(0px);
 }
-main {
+#background{
   height:100vh;
   min-height:100vh;
   background: url(img/design-things.jpg) center;
   background-size: cover;
+  /*filter: contrast(170%);*/
+}
+#nav-container{
+  height:100vh;
+  min-height:100vh;
+  /*background-color: rgba(0,0,0,.4);*/
 }
 .main-overlay {
   margin: 0;
@@ -42,7 +48,12 @@ main {
   width: 100%;
   height: 100%;
 }
-
+#main-nav{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 #logo {
   background: url(img/GMC-logo-new.svg) no-repeat;
   width: 300px;
@@ -50,35 +61,42 @@ main {
   height: 300px;
   display: block;
   margin: auto;
-  top: 40%;
+/*  top: 40%;
   -webkit-transform: translateY(40%);
-  -moz-transform: translateY(40%);
+  -moz-transform: translateY(40%);*/
+  cursor: pointer;
 }
 #logo:hover {
   /*transition: all .5s;*/
    background: url(img/GMC-logo-hover.svg) no-repeat;
 }
+.hover-intro{
+  background: url(img/GMC-logo-hover.svg) no-repeat;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+}
 #portfolio-button {
-  /*transition: all 1s;*/
-   background: url(img/portfolio-button.svg) no-repeat;
-   width: 300px;
-   /* display: block; */
-   height: 100px;
-   display: block;
-   margin: auto;
-   margin-top: 131px;
-   cursor: pointer;
+  /*transition: all 1s; */
+  background: url(img/portfolio-button.svg) no-repeat;
+  width: 300px;
+  /* display: block; */
+  height: 100px;
+  /* display: block; */
+  /* margin: auto; */
+  /* margin-top: 131px; */
+  margin-top: 10px;
+  cursor: pointer;
 }
 #portfolio-button:hover {
    background: url(img/portfolio-button-hover.svg) no-repeat;
 }
 #resume-button {
-   background: url(img/resume-button.svg) no-repeat;
-   width: 300px;
-   height: 100px;
-   display: block;
-   margin: auto;
-   margin-top: 10px;
+  background: url(img/resume-button.svg) no-repeat;
+  width: 300px;
+  height: 100px;
+  /* display: block; */
+  /* margin: auto; */
+  margin-top: 10px;
 }
 #resume-button:hover {
   /*transition: all .5s;*/
@@ -86,7 +104,7 @@ main {
 }
 
 #about-content p:nth-child(3) {
-  padding-bottom: 15px;
+  /*padding-bottom: 15px;*/
 }
 
 #portfolio-section {
@@ -256,63 +274,78 @@ OVERLAY EFFECT
 
 /*======================================================*/
 /*ABOUT and CONTACT SLIDERS*/
-
-
+#overlay{
+  opacity: 0.95;
+  /* position: fixed; */
+  /* top: 0px; */
+  /* left: 0px; */
+  background-color: white;
+  /* width: 100%; */
+  z-index: 10;
+  /* display: block; */
+  height: 100%;
+  /* min-height: 100vh; */
+  position: fixed;
+  /* width: 100%; */
+  /* height: 100%; */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.lightbox{
+  display:none;
+  position: fixed;
+  margin:auto;
+  z-index:9999999999;
+}
+.lightbox h1{
+  color:black;
+}
 
 #about-section {
-  display: none;
-  position: relative;
-  background: #fff;
-  overflow: hidden;
-  z-index: 99999999;
+  position: fixed;
+  top: 0;
+  color: black;
+  z-index: 999;
+  text-align: center;
+  width: 100%;
+  /* top: 50%; */
+  /* bottom: 50%; */
+  height: 100%;
+  overflow:auto;
 }
-
-
-#about-section #about-img {
-  /*height: 200px;
-  width: 400px;*/
-}
-
-#about-section #about-img img {
-  padding: 15px 30px 0;
-}
-
-#about-section .close-wrapper {
-  /*padding: 0 0 15px 0;*/
-  background: url(img/close.svg) no-repeat;
-  width: 50px;
+#about-content{
+  width: 60%;
+  text-align: left; 
   margin: auto;
-  cursor: pointer;
-  padding: 25px;
-}
-#about-section .close-wrapper:hover {
-  background: url(img/close-hover.svg) no-repeat;
-}
-
-
-#about-section a, #contact-section a {
-  padding: 15px;
+  top: 50%;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#about-section a:hover, #contact-section a:hover {
-  opacity: 0.4;
-}
-
-#about-section #about-content {
-  padding: 0 32px;
-}
-#about-section #about-content h3 {
-  color: #fff;
-}
-#about-section #about-content h3, #about-section #about-content p {
-  /*padding-right: 8px;*/
-  position: relative;
-  text-align: left;
-  transform: none;
-  top: none;
-  letter-spacing: 1px;
+.close{
+  float: right;
+  font-weight: 700;
   color: #000;
-  /*-webkit-transform: translateZ(0px);*/
+  text-shadow: 0 1px 0 #fff;
+  display: inline-block;
+  font-size: 51px;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 1;
+  margin-top: -5px;
+  margin-right: 5px;
+  z-index:999999999;
+}
+button.close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
 }
 
 #resume {
@@ -435,7 +468,7 @@ ul#social li img{
 #email {
   color: #777;
   font-size: 18px;
-  letter-spacing: 2px;
+  /*letter-spacing: 2px;*/
 }
 #email:hover {
   color: #fff;

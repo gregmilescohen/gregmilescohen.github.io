@@ -12,8 +12,8 @@
   #logo {
     width: 200px;
     height: 200px;
-    -webkit-transform: translateY(10%);
-    -moz-transform: translateY(10%);
+   /* -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);*/
   }
   #portfolio-button {
     width: 200px;
@@ -37,6 +37,9 @@
     display: block;
     width: 100%;
     padding: 0 32px;
+    top: 5%;
+    left: 0; 
+    transform: none; 
   }
 
   #portfolio-section .work-example {
@@ -90,23 +93,22 @@
   #logo {
     width: 250px;
     height: 250px;
-    top: 40%;
+/*    top: 40%;
     -webkit-transform: translateY(25%);
-    -moz-transform: translateY(25%);
+    -moz-transform: translateY(25%);*/
   }
 
   #portfolio-button {
      width: 250px;
-     height: 100px;
+     height: 84px;
      display: block;
-     margin: auto;
-     margin-top: 70px;
+/*     margin: auto;
+     margin-top: 70px;*/
   }
 
   #resume-button {
      width: 250px;
-     height: 100px;
-     margin-top: -10px;
+     height: 84px;
   }
 }
 
